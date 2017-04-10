@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style: none;
+}
+#box{
+    width: 700px;
+    height: 400px;
+    margin:80px auto;
+    border: 1px solid red;
+    overflow: hidden;
+    zoom:1;
+    position:relative;
+    box-shadow: 8px 8px 3px rgba(229, 151, 255, 0.56);
+    background-color: darkgray;
+}
+#myList{
+    width: 3500px;
+    height: 400px;
+    position: absolute;
+    /*border: 1px solid #e597ff;*/
+    top:0;
+    left:0;
+}
+#myList li{
+    float:left;
+    /*border:1px solid #ceff15;*/
+    width:700px;
+}
+#myList li img{
+    width:100%;
+    height: 400px;
+    background: url("images/default.gif") no-repeat center;
+}
+#focus{
+    position: absolute;
+    bottom:0;
+    width: 700px;
+    height: 30px;
+    text-align: center;
+    margin-left: 260px;
+    line-height: 30px;
+    /*background-color: yellow;*/
+}
+#focus li{
+    width:14px;
+    height: 14px;
+    float:left;
+    margin-left: 10px;
+    border-radius:50%;
+    background-color: rgba(229, 151, 255, 0.99);
+    text-align: center;
+
+}
+#slide1,#slide2{
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    top:50%;
+    margin-top:-25px;
+    background-color: rgba(241, 255, 131, 0.66);
+    line-height: 50px;
+    /*display: none;*/
+}
+#slide1{
+    left: 0;
+}
+#slide2{
+    right: 0;
+}
+#box:hover div{
+    display: block;
+}
+#box div:hover{
+    background-color: rgba(3, 1, 1, 0.47);
+}
+#focus li.selected{
+    background-color: rgba(229, 17, 17, 0.97);
+}
